@@ -6,8 +6,8 @@
 <br/>
 <br/>
 
-### 🌱 사용할 기술
-- 기술
+## 🌱 사용할 기술
+### 기술
 <div>
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white"/>
   <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">
@@ -19,14 +19,14 @@
 
 <br/>
 
-- 버전 관리
+### 버전 관리
 <div>
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 </div>
 
 <br/>
 
-- 배포
+### 배포
 <div>
 <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=Vercel&logoColor=white"/>
 </div>
@@ -34,7 +34,7 @@
 <br/>
 <br/>
 
-### 💡 커밋 컨벤션
+## 💡 커밋 컨벤션
 ||태그|목적|예시|
 |:---:|:---:|:---:|:---:|
 |🎨|Feat|새로운 기능 추가|Feat: 회원 가입 기능 구현|
