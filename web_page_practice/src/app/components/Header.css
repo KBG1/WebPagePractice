@@ -1,0 +1,77 @@
+/* 폰트 및 기본 스타일 */
+@font-face {
+    font-family: 'BagelFatOne-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-container {
+    padding: 30px;
+    font-weight: bold;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    font-size: 28px;
+    font-family: 'BagelFatOne-Regular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-search-bar {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 70px;
+}
+
+.header-search-wrapper {
+    position: relative;
+    width: 500px; /* input과 아이콘이 함께 들어갈 공간 */
+}
+
+.header-search-input {
+    width: 100%;
+    padding-right: 40px; /* 아이콘이 들어갈 공간 확보 */
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding-left: 12px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.header-search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.header-list {
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.header-regist-professor, .header-login-button, .header-signup-button {
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 6px 10px;
+}
+
+.header-regist-professor:hover, .header-signup-button:hover, .header-login-button:hover {
+    background-color: cadetblue;
+    color: white;
+}

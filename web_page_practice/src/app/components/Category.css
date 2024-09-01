@@ -1,0 +1,23 @@
+.category-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.category-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.category-list-it, .category-list-design, .category-list-living, .category-list-music, .category-list-history, .category-list-exercise, .category-list-law, .category-list-politics, .category-list-game, .category-list-education{
+    font-weight: bold;
+}
+
+.category-list-it:hover, .category-list-design:hover, .category-list-education:hover, .category-list-exercise:hover, .category-list-game:hover, .category-list-history:hover, .category-list-law:hover, .category-list-living:hover, .category-list-music:hover, .category-list-politics:hover{
+    background:linear-gradient(180deg,rgba(255,255,255,0) 70%, gold 50%);
+
+}
