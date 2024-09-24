@@ -1,0 +1,24 @@
+.footer-container {
+  margin-top: 70px;
+  border-top: 1px solid #d9d9d9;
+  padding: 20px;
+}
+
+.footer-list {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tag {
+  font-size: 12px;
+  margin-top: 75px;
+  text-align: end;
+}
+
+.footer-information-test:hover {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 80%, gold 50%);
+}

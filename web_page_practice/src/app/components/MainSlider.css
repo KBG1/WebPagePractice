@@ -5,17 +5,17 @@
   }
 
   .slick-prev:before, .slick-next:before {
-    color: gray; /* 원하는 색상으로 변경 */
-    font-size: 20px; /* 화살표 크기 조정 */
-    opacity: 0.5; /* 투명도 조정 */
+    color: gray;
+    font-size: 20px; 
+    opacity: 0.5;
   }
-  
+
   .slick-prev, .slick-next {
-    font-size: 0; /* 텍스트 숨김 */
+    font-size: 0; 
     line-height: 1;
-    opacity: 0.9; /* 진한 색상 */
+    opacity: 0.9;
     color: black;
-    z-index: 1002;
+    z-index: 1000;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -26,11 +26,11 @@
   }
   
   .slick-prev {
-    left: 330px; /* 슬라이드와 가까워지도록 조정 */
+    left: 360px; 
   }
   
   .slick-next {
-    right: 330px; /* 슬라이드와 가까워지도록 조정 */
+    right: 360px; 
   }
   
   .slick-prev:hover, .slick-next:hover {
@@ -43,16 +43,16 @@
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
-    margin: 15px 0px; /* 이미지 간 간격 조정 */
+    margin: 15px 0px;
     padding: 10px 30px;
   }
   
   .slick-center {
-    transform: scale(1); /* 중앙 슬라이드 크기 조정 */
+    transform: scale(1); 
   }
   
   .slick-slide:not(.slick-center) {
-    filter: brightness(0.5); /* 선택되지 않은 슬라이드를 어둡게 */
+    filter: brightness(0.5);
   }
 
   .slider-image {

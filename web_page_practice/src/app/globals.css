@@ -8,5 +8,12 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  height: 500px;
+}
+
+/* 폰트 및 기본 스타일 */
+@font-face {
+  font-family: 'BagelFatOne-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }

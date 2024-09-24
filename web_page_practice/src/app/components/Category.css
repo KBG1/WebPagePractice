@@ -4,6 +4,7 @@
     margin-right: auto;
     padding: 10px 20px;
     display: flex;
+    justify-content: center;
 }
 
 .category-list {
@@ -11,13 +12,55 @@
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
+    position: relative;
 }
 
-.category-list-it, .category-list-design, .category-list-living, .category-list-music, .category-list-history, .category-list-exercise, .category-list-law, .category-list-politics, .category-list-game, .category-list-education{
+.category-list-item {
     font-weight: bold;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
 }
 
-.category-list-it:hover, .category-list-design:hover, .category-list-education:hover, .category-list-exercise:hover, .category-list-game:hover, .category-list-history:hover, .category-list-law:hover, .category-list-living:hover, .category-list-music:hover, .category-list-politics:hover{
-    background:linear-gradient(180deg,rgba(255,255,255,0) 70%, gold 50%);
+/* 상위 메뉴 항목에 마우스를 올릴 때만 호버 배경색이 변경되도록 */
+.category-list-item:hover {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 80%, gold 50%);
+}
 
+/* 기본적으로 메가메뉴는 숨김 */
+.category-mega-menu {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1003;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+}
+
+/* 상위 메뉴(운동 등)에 마우스를 올릴 때만 메가메뉴가 열리도록 설정 */
+.category-list-item:hover .category-mega-menu {
+    display: block;
+    opacity: 1;
+}
+
+/* 하위 메뉴 아이템 스타일 */
+.category-mega-menu li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    list-style-type: none;
+    text-align: center;
+}
+
+/* 하위 메뉴 항목에 마우스를 올릴 때는 단순 스타일 변경만 적용 */
+.category-mega-menu li:hover {
+    text-decoration: underline;
 }

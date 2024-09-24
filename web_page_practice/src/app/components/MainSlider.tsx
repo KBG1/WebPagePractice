@@ -7,9 +7,11 @@ import Image from "next/image";
 import "./MainSlider.css";
 import React, { ReactNode } from "react";
 
+//ssr환경에서 오류가 뜨길래 dynamic을 달아주었다.
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const MainSlider = () => {
+  //slick-carousel 설정하는 부분
   const settings = {
     dots: true,
     infinite: true,
@@ -19,24 +21,12 @@ const MainSlider = () => {
     centerMode: true,
     arrows: true,
     variableWidth: true,
-    appendDots: (dots: ReactNode[]) => (
-      <div>
-        <ul style={{ margin: "0px" }}> {dots} </ul>
-        <div className="slick-page-text">
-          {dots.findIndex(
-            (dot) =>
-              React.isValidElement(dot) &&
-              dot.props?.className?.includes("slick-active")
-          ) + 1}{" "}
-          / {dots.length}
-        </div>
-      </div>
-    ),
     autoplay: true,
     autoplaySpeed: 3000,
   };
 
   return (
+    //세팅을 적용한 캐러셀
     <Slider {...settings} className="slider-container">
       <div className="slider-card" style={{ width: 700 }}>
         <Image
@@ -44,7 +34,7 @@ const MainSlider = () => {
           src="/images/slide.gif"
           alt="Slide 1"
           layout="responsive"
-          width={700}
+          width={500}
           height={184}
         />
       </div>
@@ -54,7 +44,7 @@ const MainSlider = () => {
           src="/images/slide1.png"
           alt="Slide 2"
           layout="responsive"
-          width={700}
+          width={500}
           height={184}
         />
       </div>
@@ -64,7 +54,7 @@ const MainSlider = () => {
           src="/images/slide2.png"
           alt="Slide 3"
           layout="responsive"
-          width={700}
+          width={500}
           height={184}
         />
       </div>
